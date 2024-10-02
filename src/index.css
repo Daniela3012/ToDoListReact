@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primaryPink: #D9A3B8;
+}
+body {
+  background-color: var(--primaryPink);
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.portal {
+  background-image: url('./assets/g1.gif');
+  background-size: contain;
+  height: 35vh;
+}
+.portal__title {
+  font-family: "Work Sans", sans-serif;
+  color: var(--primaryPink);
+  background-color: #f5efef;
+  text-align: center;
+  width: 100%;
+}
+.todo__container {
+  padding-top: 20px;
+  text-align: center;
+}
+.form__task {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.form__title {
+  color: #4E3A34;
+  font-weight: bolder;
+}
+.input {
+  padding: 10px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #aa696a;
+  transition: border-color 0.3s ease-in-out;
+  border: 2px solid #ffe7e7;
+  border-radius: 5px; 
+}
+.input:focus {
+  border-color: #dfa3a4;  
+  outline: none; 
+}
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bolder;
+  background-color: #f3e3e4;
+  color: #4E3A34;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #cca3d9;
+}
+.post__task {
+  margin: 25px auto;
+  width: 90%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.post__task--container {
+  background-color: #faf3f3;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 6px 6px 2px #949494;
+}
+.post__task--text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4E3A34;
+  margin-bottom: 10px;
+}
+.post__task--textoptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post__icons {
+  justify-self: right;
+  display: flex;
+  justify-content: space-around;
+}
+.button-icon {
+  border: none;
+  background-color: #ffffff00;
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px;
+}
+.input__update {
+  margin-bottom: 5px;
+}
+.icon {
+  height: 20px;
+}
+.task--done {
+  text-decoration: line-through;
+}
